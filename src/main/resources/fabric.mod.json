@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "bns",
+	"version": "${version}",
+	"name": "Blocks N Stuffs",
+	"description": "Ever want to add other variants of blocks? Well, this is a mod that does that! Credits to EightSidedSquare's IllegalBuildingTechniques mod (https://github.com/8s2/IllegalBlocks).",
+	"authors": [
+		"HaydenYKH"
+	],
+	"contact": {
+		"sources": "https://github.com/haydenykh/BlocksNStuffs"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bns/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"haydenykh.bns.BlocksNStuffs"
+		],
+		"client": [
+			"haydenykh.bns.common.client.BlocksNStuffsClient"
+		],
+		"fabric-datagen": [
+			"haydenykh.bns.BlocksNStuffsDataGenerator"
+		]
+	},
+	"mixins": [
+		"bns.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
