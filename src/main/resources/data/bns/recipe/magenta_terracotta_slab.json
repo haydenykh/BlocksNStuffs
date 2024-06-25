@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "building",
+    "pattern": ["###"],
+    "key": {
+        "#": {
+            "item": "minecraft:magenta_terracotta"
+        }
+    },
+    "result": {
+        "count": 6,
+        "id": "bns:magenta_terracotta_slab"
+    }
+}
