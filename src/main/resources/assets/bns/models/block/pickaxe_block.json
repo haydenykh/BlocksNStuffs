@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/template_command_block",
+    "textures": {
+        "back": "bns:block/pickaxe_block_back",
+        "front": "bns:block/pickaxe_block_front",
+        "side": "bns:block/pickaxe_block_side"
+    }
+}

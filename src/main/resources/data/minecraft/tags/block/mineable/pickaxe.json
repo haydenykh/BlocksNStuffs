@@ -17,6 +17,9 @@
         "bns:red_terracotta_slab",
         "bns:terracotta_slab",
         "bns:white_terracotta_slab",
-        "bns:yellow_terracotta_slab"
+        "bns:yellow_terracotta_slab",
+        "bns:info_update",
+        "bns:pickaxe_block",
+        "bns:place_block"
     ]
 }

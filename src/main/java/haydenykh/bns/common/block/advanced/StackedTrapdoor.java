@@ -19,10 +19,12 @@
 //import net.minecraft.util.shape.VoxelShape;
 //import net.minecraft.world.BlockView;
 //import net.minecraft.world.World;
+//import net.minecraft.world.WorldView;
 //
 //public class StackedTrapdoor extends TrapdoorBlock {
 //    public static final IntProperty THICKNESS = IntProperty.of("thickness", 1, 5);
 //    public Block TRAPDOOR_BLOCK;
+//    public Hand hand;
 //
 //    public StackedTrapdoor(BlockSetType type, AbstractBlock.Settings settings, Block trapdoorBlock) {
 //        super(type, settings);
@@ -33,11 +35,11 @@
 //        builder.add(new Property[]{FACING, OPEN, HALF, POWERED, THICKNESS, WATERLOGGED});
 //    }
 //
-//    public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
+//    public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
 //        return new ItemStack(this.TRAPDOOR_BLOCK);
 //    }
 //
-//    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+//    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
 //        if (player.getStackInHand(hand).isOf(this.TRAPDOOR_BLOCK.asItem()) && (Integer) state.get(THICKNESS) < 5) {
 //            world.setBlockState(pos, (BlockState) state.with(THICKNESS, (Integer) state.get(THICKNESS) + 1), 2);
 //            world.playSound((PlayerEntity) null, pos, this.soundGroup.getPlaceSound(), SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.2F);

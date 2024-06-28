@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "bns:block/ant",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "bns:block/ant"
+        },
+        "facing=south": {
+            "model": "bns:block/ant",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "bns:block/ant",
+            "y": 270
+        }
+    }
+}

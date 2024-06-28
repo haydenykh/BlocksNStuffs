@@ -1,35 +1,50 @@
 package haydenykh.bns.common.block;
 
 //import haydenykh.bns.common.block.advanced.StackedTrapdoor;
+import haydenykh.bns.common.block.advanced.*;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 import static haydenykh.bns.BlocksNStuffs.ID;
 import static haydenykh.bns.BlocksNStuffs.LOGGER;
 
 public class BlocksNStuffsBlocks {
-    public static final Block BLACK_TERRACOTTA_SLAB;
-    public static final Block BLUE_TERRACOTTA_SLAB;
-    public static final Block BROWN_TERRACOTTA_SLAB;
-    public static final Block CYAN_TERRACOTTA_SLAB;
-    public static final Block GRAY_TERRACOTTA_SLAB;
-    public static final Block GREEN_TERRACOTTA_SLAB;
-    public static final Block LIGHT_BLUE_TERRACOTTA_SLAB;
-    public static final Block LIGHT_GRAY_TERRACOTTA_SLAB;
-    public static final Block LIME_TERRACOTTA_SLAB;
-    public static final Block MAGENTA_TERRACOTTA_SLAB;
-    public static final Block ORANGE_TERRACOTTA_SLAB;
-    public static final Block PINK_TERRACOTTA_SLAB;
-    public static final Block PURPLE_TERRACOTTA_SLAB;
-    public static final Block RED_TERRACOTTA_SLAB;
-    public static final Block TERRACOTTA_SLAB;
-    public static final Block WHITE_TERRACOTTA_SLAB;
-    public static final Block YELLOW_TERRACOTTA_SLAB;
+    /*———————————————————/
+       TERRACOTTA SLAB
+    /———————————————————*/
+//    public static final Block BLACK_TERRACOTTA_SLAB;
+//    public static final Block BLUE_TERRACOTTA_SLAB;
+//    public static final Block BROWN_TERRACOTTA_SLAB;
+//    public static final Block CYAN_TERRACOTTA_SLAB;
+//    public static final Block GRAY_TERRACOTTA_SLAB;
+//    public static final Block GREEN_TERRACOTTA_SLAB;
+//    public static final Block LIGHT_BLUE_TERRACOTTA_SLAB;
+//    public static final Block LIGHT_GRAY_TERRACOTTA_SLAB;
+//    public static final Block LIME_TERRACOTTA_SLAB;
+//    public static final Block MAGENTA_TERRACOTTA_SLAB;
+//    public static final Block ORANGE_TERRACOTTA_SLAB;
+//    public static final Block PINK_TERRACOTTA_SLAB;
+//    public static final Block PURPLE_TERRACOTTA_SLAB;
+//    public static final Block RED_TERRACOTTA_SLAB;
+//    public static final Block TERRACOTTA_SLAB;
+//    public static final Block WHITE_TERRACOTTA_SLAB;
+//    public static final Block YELLOW_TERRACOTTA_SLAB;
+
+    /*——————————————————/
+         JOKE BLOCKS
+    /——————————————————*/
+    public static final Block INFO_UPDATE; // Pocket Edition Alpha v0.1.3 & Bedrock Edition Preview 1.20.80.21
+    public static final Block STONECUTTER; // Pocket Edition Alpha v0.6.0, Bedrock Edition beta 1.10.0.3 & New Nintendo 3DS Edition v0.1.0
+    public static final Block ANT; // Java Edition Snapshot 20w14∞ (20w14infinite)
+    public static final Block ZONE; // Java Edition Snapshot 20w14∞ (20w14infinite)    public static final Block NEITHER_PORTAL; // Java Edition Snapshot 23w13a_or_b
+    public static final Block CHEESE; // Java Edition Snapshot 23w13a_or_b
+    public static final Block PICKAXE_BLOCK; // Java Edition Snapshot 23w13a_or_b
+    public static final Block PLACE_BLOCK; // Java Edition Snapshot 23w13a_or_b
 
 //    public static final Block STACKED_OAK_TRAPDOOR;
 //    public static final Block STACKED_SPRUCE_TRAPDOOR;
@@ -87,23 +102,31 @@ public class BlocksNStuffsBlocks {
 //        STACKED_OXIDIZED_COPPER_TRAPDOOR = register("stacked_oxidized_copper_trapdoor", new StackedTrapdoor(BlockSetType.COPPER, AbstractBlock.Settings.copy(Blocks.OXIDIZED_COPPER_TRAPDOOR), Blocks.OXIDIZED_COPPER_TRAPDOOR));
 //        STACKED_WAXED_OXIDIZED_COPPER_TRAPDOOR = register("stacked_waxed_oxidized_copper_trapdoor", new StackedTrapdoor(BlockSetType.COPPER, AbstractBlock.Settings.copy(Blocks.WAXED_OXIDIZED_COPPER_TRAPDOOR), Blocks.WAXED_OXIDIZED_COPPER_TRAPDOOR));
 
-        BLACK_TERRACOTTA_SLAB = register("black_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        BLUE_TERRACOTTA_SLAB = register("blue_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        BROWN_TERRACOTTA_SLAB = register("brown_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        CYAN_TERRACOTTA_SLAB = register("cyan_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_CYAN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        GRAY_TERRACOTTA_SLAB = register("gray_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        GREEN_TERRACOTTA_SLAB = register("green_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GREEN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        LIGHT_BLUE_TERRACOTTA_SLAB = register("light_blue_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        LIGHT_GRAY_TERRACOTTA_SLAB = register("light_gray_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        LIME_TERRACOTTA_SLAB = register("lime_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        MAGENTA_TERRACOTTA_SLAB = register("magenta_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_MAGENTA).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        ORANGE_TERRACOTTA_SLAB = register("orange_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        PINK_TERRACOTTA_SLAB = register("pink_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PINK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        PURPLE_TERRACOTTA_SLAB = register("purple_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PURPLE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        RED_TERRACOTTA_SLAB = register("red_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        TERRACOTTA_SLAB = register("terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        WHITE_TERRACOTTA_SLAB = register("white_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
-        YELLOW_TERRACOTTA_SLAB = register("yellow_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        BLACK_TERRACOTTA_SLAB = register("black_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        BLUE_TERRACOTTA_SLAB = register("blue_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        BROWN_TERRACOTTA_SLAB = register("brown_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        CYAN_TERRACOTTA_SLAB = register("cyan_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_CYAN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        GRAY_TERRACOTTA_SLAB = register("gray_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        GREEN_TERRACOTTA_SLAB = register("green_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_GREEN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        LIGHT_BLUE_TERRACOTTA_SLAB = register("light_blue_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        LIGHT_GRAY_TERRACOTTA_SLAB = register("light_gray_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        LIME_TERRACOTTA_SLAB = register("lime_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        MAGENTA_TERRACOTTA_SLAB = register("magenta_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_MAGENTA).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        ORANGE_TERRACOTTA_SLAB = register("orange_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        PINK_TERRACOTTA_SLAB = register("pink_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PINK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        PURPLE_TERRACOTTA_SLAB = register("purple_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_PURPLE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        RED_TERRACOTTA_SLAB = register("red_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        TERRACOTTA_SLAB = register("terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        WHITE_TERRACOTTA_SLAB = register("white_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+//        YELLOW_TERRACOTTA_SLAB = register("yellow_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
+
+        ANT = register("ant", new AntBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WET_GRASS).strength(-1.0F, 3600000.0F).dropsNothing()));
+        INFO_UPDATE = register("info_update", new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRAVEL).requiresTool()));
+        STONECUTTER = register("stonecutter", new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).requiresTool().strength(3.5F, 3.5F)));
+        ZONE = register("zone", new ZoneBlock(AbstractBlock.Settings.create().strength(-1.0F, 3600000.8F).dropsNothing().nonOpaque().allowsSpawning(Blocks::never).blockVision(Blocks::always)));
+        CHEESE = register("cheese", new CheeseBlock(AbstractBlock.Settings.create().strength(0.1F).sounds(BlockSoundGroup.FUNGUS)));
+        PICKAXE_BLOCK = register("pickaxe_block", new PickaxeBlock(AbstractBlock.Settings.create().strength(3.0F).requiresTool().solidBlock(Blocks::always)));
+        PLACE_BLOCK = register("place_block", new PlaceBlock(AbstractBlock.Settings.create().strength(3.0F).requiresTool().solidBlock(Blocks::always)));
     }
 
 }

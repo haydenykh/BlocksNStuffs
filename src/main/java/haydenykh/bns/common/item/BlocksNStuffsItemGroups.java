@@ -21,23 +21,31 @@ public class BlocksNStuffsItemGroups {
                     .icon(() -> new ItemStack(Blocks.RED_STAINED_GLASS))
                     .displayName(Text.translatable("itemGroup.bns"))
                     .entries((context, entries) -> {
-                        entries.add(BlocksNStuffsBlocks.TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.WHITE_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.GRAY_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.BLACK_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.BROWN_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.RED_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.ORANGE_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.YELLOW_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.LIME_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.GREEN_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.CYAN_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.BLUE_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.PURPLE_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.MAGENTA_TERRACOTTA_SLAB);
-                        entries.add(BlocksNStuffsBlocks.PINK_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.WHITE_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.GRAY_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.BLACK_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.BROWN_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.RED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.ORANGE_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.YELLOW_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.LIME_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.GREEN_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.CYAN_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.BLUE_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.PURPLE_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.MAGENTA_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.PINK_TERRACOTTA_SLAB);
+
+                        entries.add(BlocksNStuffsBlocks.INFO_UPDATE);
+                        entries.add(BlocksNStuffsBlocks.STONECUTTER);
+                        entries.add(BlocksNStuffsBlocks.ANT);
+                        entries.add(BlocksNStuffsBlocks.ZONE);
+                        entries.add(BlocksNStuffsBlocks.CHEESE);
+                        entries.add(BlocksNStuffsBlocks.PICKAXE_BLOCK);
+                        entries.add(BlocksNStuffsBlocks.PLACE_BLOCK);
                     })
                     .build());
 

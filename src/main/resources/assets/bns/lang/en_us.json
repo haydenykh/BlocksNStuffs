@@ -17,5 +17,14 @@
     "block.bns.white_terracotta_slab": "White Terracotta Slab",
     "block.bns.yellow_terracotta_slab": "Yellow Terracotta Slab",
 
+    "block.bns.ant": "An Ant",
+
+    "block.bns.info_update": "info_update",
+    "block.bns.stonecutter": "Stonecutter",
+    "block.bns.zone": "Leftover",
+    "block.bns.cheese": "Cheese Block",
+    "block.bns.pickaxe_block": "Pickaxe Block",
+    "block.bns.place_block": "Place Block",
+
     "itemGroup.bns": "Blocks N Stuffs"
 }
