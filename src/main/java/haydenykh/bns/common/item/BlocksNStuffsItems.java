@@ -2,18 +2,31 @@ package haydenykh.bns.common.item;
 
 import haydenykh.bns.common.block.BlocksNStuffsBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.block.entity.BannerPattern;
+import net.minecraft.item.*;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BannerPatternTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import static haydenykh.bns.BlocksNStuffs.ID;
 import static haydenykh.bns.BlocksNStuffs.LOGGER;
 
 public class BlocksNStuffsItems {
-    public static final Item CHEESE;
+    private static final TagKey<BannerPattern> M_PATTERN_ITEM = of("pattern_item/m");
+
+    public static final Item FOOTPRINT; // Java Edition Snapshot 20w14∞ (20w14infinite)
+    public static final Item FINE_ITEM; // Java Edition Snapshot 20w14∞ (20w14infinite)
+    public static final Item CHEESE; // Java Edition Snapshot 23w13a_or_b
+//    public static final Item BIT; // Java Edition Snapshot 23w13a_or_b
+    public static final Item LA_BAGUETTE; // Java Edition Snapshot 23w13a_or_b
+    public static final Item LE_TRICOLORE; // Java Edition Snapshot 23w13a_or_b
+    public static final Item LONGER_STRING; // Java Edition Snapshot 23w13a_or_b
+    public static final Item M_BANNER_PATTERN; // Java Edition Snapshot 23w13a_or_b
 
     private static Item register(Block block) {
         return register(new BlockItem(block, new Settings()));
@@ -42,7 +55,18 @@ public class BlocksNStuffsItems {
         LOGGER.info("Initializing items for " + ID);
     }
 
+    private static TagKey<BannerPattern> of(String id) {
+        return TagKey.of(RegistryKeys.BANNER_PATTERN, Identifier.ofVanilla(id));
+    }
+
     static {
         CHEESE = register(BlocksNStuffsBlocks.CHEESE);
+        FOOTPRINT = register("footprint", new Item(new Settings()));
+        FINE_ITEM = register("fine_item", new Item(new Settings()));
+//        BIT = register("bit", new Item(new Settings()));
+        LA_BAGUETTE = register("la_baguette", new SwordItem(ToolMaterials.WOOD, new Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4F))));
+        LE_TRICOLORE = register("le_tricolore", new Item(new Settings()));
+        LONGER_STRING = register("string2", new Item(new Settings()));
+        M_BANNER_PATTERN = register("m_banner_pattern", new BannerPatternItem(M_PATTERN_ITEM, new Settings().maxCount(1).rarity(Rarity.EPIC)));
     }
 }

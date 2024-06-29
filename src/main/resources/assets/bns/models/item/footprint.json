@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "bns:item/footprint"
+    },
+    "display": {
+        "fixed": {
+            "scale":[ 0.5, 0.5, 0.5 ]
+        }
+    }
+}

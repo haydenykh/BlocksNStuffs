@@ -18,7 +18,7 @@ public class BlocksNStuffsItemGroups {
 
     public static final ItemGroup BNS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ID, "bns"), FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(Blocks.RED_STAINED_GLASS))
+                    .icon(() -> new ItemStack(BlocksNStuffsItems.LA_BAGUETTE))
                     .displayName(Text.translatable("itemGroup.bns"))
                     .entries((context, entries) -> {
 //                        entries.add(BlocksNStuffsBlocks.TERRACOTTA_SLAB);
@@ -46,6 +46,14 @@ public class BlocksNStuffsItemGroups {
                         entries.add(BlocksNStuffsBlocks.CHEESE);
                         entries.add(BlocksNStuffsBlocks.PICKAXE_BLOCK);
                         entries.add(BlocksNStuffsBlocks.PLACE_BLOCK);
+
+                        entries.add(BlocksNStuffsItems.FOOTPRINT);
+                        entries.add(BlocksNStuffsItems.FINE_ITEM);
+                        entries.add(BlocksNStuffsItems.BIT);
+                        entries.add(BlocksNStuffsItems.LA_BAGUETTE);
+                        entries.add(BlocksNStuffsItems.LE_TRICOLORE);
+                        entries.add(BlocksNStuffsItems.LONGER_STRING);
+                        entries.add(BlocksNStuffsItems.M_BANNER_PATTERN);
                     })
                     .build());
 

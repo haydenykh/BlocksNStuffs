@@ -25,6 +25,32 @@
     "block.bns.cheese": "Cheese Block",
     "block.bns.pickaxe_block": "Pickaxe Block",
     "block.bns.place_block": "Place Block",
+    "block.bns.banner.m.black": "Black New Thing",
+    "block.bns.banner.m.blue": "Blue New Thing",
+    "block.bns.banner.m.brown": "Brown New Thing",
+    "block.bns.banner.m.cyan": "Cyan New Thing",
+    "block.bns.banner.m.gray": "Gray New Thing",
+    "block.bns.banner.m.green": "Green New Thing",
+    "block.bns.banner.m.light_blue": "Light Blue New Thing",
+    "block.bns.banner.m.light_gray": "Light Gray New Thing",
+    "block.bns.banner.m.lime": "Lime New Thing",
+    "block.bns.banner.m.magenta": "Magenta New Thing",
+    "block.bns.banner.m.orange": "Orange New Thing",
+    "block.bns.banner.m.pink": "Pink New Thing",
+    "block.bns.banner.m.purple": "Purple New Thing",
+    "block.bns.banner.m.red": "Red New Thing",
+    "block.bns.banner.m.white": "White New Thing",
+    "block.bns.banner.m.yellow": "Yellow New Thing",
+
+    "item.bns.footprint": "Footprint",
+    "item.bns.fine_item": "A Very Fine Item",
+    "item.bns.bit": "Bit",
+    "item.bns.la_baguette": "La Baguette",
+    "item.bns.le_tricolore": "Le Tricolore",
+    "item.bns.string2": "Longer String",
+    "item.bns.m_banner_pattern": "Banner Pattern",
+    "item.bns.m_banner_pattern.desc": "New Thing",
+    
 
     "itemGroup.bns": "Blocks N Stuffs"
 }
