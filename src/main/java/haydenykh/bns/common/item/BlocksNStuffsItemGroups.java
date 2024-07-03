@@ -41,19 +41,22 @@ public class BlocksNStuffsItemGroups {
 
                         entries.add(BlocksNStuffsBlocks.INFO_UPDATE);
                         entries.add(BlocksNStuffsBlocks.STONECUTTER);
+
                         entries.add(BlocksNStuffsBlocks.ANT);
                         entries.add(BlocksNStuffsBlocks.ZONE);
+                        entries.add(BlocksNStuffsItems.FOOTPRINT);
+                        entries.add(BlocksNStuffsItems.FINE_ITEM);
+
                         entries.add(BlocksNStuffsBlocks.CHEESE);
                         entries.add(BlocksNStuffsBlocks.PICKAXE_BLOCK);
                         entries.add(BlocksNStuffsBlocks.PLACE_BLOCK);
-
-                        entries.add(BlocksNStuffsItems.FOOTPRINT);
-                        entries.add(BlocksNStuffsItems.FINE_ITEM);
-                        entries.add(BlocksNStuffsItems.BIT);
                         entries.add(BlocksNStuffsItems.LA_BAGUETTE);
                         entries.add(BlocksNStuffsItems.LE_TRICOLORE);
                         entries.add(BlocksNStuffsItems.LONGER_STRING);
                         entries.add(BlocksNStuffsItems.M_BANNER_PATTERN);
+                        entries.add(BlocksNStuffsBlocks.COPPER_SPLEAVES);
+
+//                        entries.add(BlocksNStuffsItems.POISONOUS_POTATO_PLANT);
                     })
                     .build());
 

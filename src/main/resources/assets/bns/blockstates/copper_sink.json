@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "bns:block/copper_sink"
+        }
+    }
+}

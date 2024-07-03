@@ -1,6 +1,6 @@
 package haydenykh.bns.common.block.advanced;
 
-import haydenykh.bns.common.item.context.PlaceBlockItemPlacementContext;
+import haydenykh.bns.common.util.context.advanced.PlaceBlockItemPlacementContext;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ChestBlock;

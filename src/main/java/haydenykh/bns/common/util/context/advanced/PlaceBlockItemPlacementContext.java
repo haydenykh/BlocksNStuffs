@@ -1,4 +1,4 @@
-package haydenykh.bns.common.item.context;
+package haydenykh.bns.common.util.context.advanced;
 
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;

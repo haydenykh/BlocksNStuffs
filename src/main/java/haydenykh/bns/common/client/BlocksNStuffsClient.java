@@ -1,4 +1,4 @@
-package haydenykh.bns.client;
+package haydenykh.bns.common.client;
 
 import haydenykh.bns.common.block.BlocksNStuffsBlocks;
 import net.fabricmc.api.ClientModInitializer;
@@ -28,5 +28,6 @@ public class BlocksNStuffsClient implements ClientModInitializer {
 //        BlockRenderLayerMap.INSTANCE.putBlock(BlocksNStuffsBlocks.STACKED_WAXED_WEATHERED_COPPER_TRAPDOOR, RenderLayer.getCutout());
 //        BlockRenderLayerMap.INSTANCE.putBlock(BlocksNStuffsBlocks.STACKED_OXIDIZED_COPPER_TRAPDOOR, RenderLayer.getCutout());
 //        BlockRenderLayerMap.INSTANCE.putBlock(BlocksNStuffsBlocks.STACKED_WAXED_OXIDIZED_COPPER_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlocksNStuffsBlocks.COPPER_SPLEAVES, RenderLayer.getCutout());
     }
 }

@@ -18,7 +18,7 @@
 			"haydenykh.bns.BlocksNStuffs"
 		],
 		"client": [
-			"haydenykh.bns.client.BlocksNStuffsClient"
+			"haydenykh.bns.common.client.BlocksNStuffsClient"
 		],
 		"fabric-datagen": [
 			"haydenykh.bns.BlocksNStuffsDataGenerator"

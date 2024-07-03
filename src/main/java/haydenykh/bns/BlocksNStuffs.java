@@ -1,8 +1,11 @@
 package haydenykh.bns;
 
 import haydenykh.bns.common.block.BlocksNStuffsBlocks;
+import haydenykh.bns.common.entity.effect.BlocksNStuffsPotions;
+import haydenykh.bns.common.entity.effect.BlocksNStuffsStatusEffects;
 import haydenykh.bns.common.item.BlocksNStuffsItemGroups;
 import haydenykh.bns.common.item.BlocksNStuffsItems;
+import haydenykh.bns.common.world.gen.feature.BlocksNStuffsFeatures;
 import net.devtech.arrp.api.RuntimeResourcePack;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,5 +22,8 @@ public class BlocksNStuffs implements ModInitializer {
 		BlocksNStuffsItems.init();
 		BlocksNStuffsBlocks.init();
 		BlocksNStuffsItemGroups.init();
+		BlocksNStuffsStatusEffects.init();
+		BlocksNStuffsPotions.init();
+		BlocksNStuffsFeatures.init();
 	}
 }

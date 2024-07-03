@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:item/poisonous_potato",
+    "overrides": [
+        {
+            "predicate": {
+                "hovered": 0.5
+            },
+            "model": "bns:item/poisonous_potato_plant_unmasked"
+        }
+    ]
+}

@@ -40,11 +40,20 @@ public class BlocksNStuffsBlocks {
     /——————————————————*/
     public static final Block INFO_UPDATE; // Pocket Edition Alpha v0.1.3 & Bedrock Edition Preview 1.20.80.21
     public static final Block STONECUTTER; // Pocket Edition Alpha v0.6.0, Bedrock Edition beta 1.10.0.3 & New Nintendo 3DS Edition v0.1.0
-    public static final Block ANT; // Java Edition Snapshot 20w14∞ (20w14infinite)
-    public static final Block ZONE; // Java Edition Snapshot 20w14∞ (20w14infinite)    public static final Block NEITHER_PORTAL; // Java Edition Snapshot 23w13a_or_b
-    public static final Block CHEESE; // Java Edition Snapshot 23w13a_or_b
-    public static final Block PICKAXE_BLOCK; // Java Edition Snapshot 23w13a_or_b
-    public static final Block PLACE_BLOCK; // Java Edition Snapshot 23w13a_or_b
+
+    // Java Edition Snapshot 20w14∞ (20w14infinite)
+    public static final Block ANT;
+    public static final Block ZONE;
+//    public static final Block BOOK_BOX;
+
+    // Java Edition Snapshot 23w13a_or_b
+//    public static final Block NEITHER_PORTAL;
+    public static final Block CHEESE;
+    public static final Block PICKAXE_BLOCK;
+    public static final Block PLACE_BLOCK;
+//    public static final Block COPPER_SINK;
+//    public static final Block FILLED_COPPER_SINK;
+    public static final Block COPPER_SPLEAVES;
 
 //    public static final Block STACKED_OAK_TRAPDOOR;
 //    public static final Block STACKED_SPRUCE_TRAPDOOR;
@@ -72,8 +81,8 @@ public class BlocksNStuffsBlocks {
         return Registry.register(Registries.BLOCK, Identifier.of(ID, id), block);
     }
 
-    private static Item registerBlockItem(String id, Block block) {
-        return Registry.register(Registries.ITEM, Identifier.of(ID, id), new BlockItem(block, new Item.Settings()));
+    private static void registerBlockItem(String id, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(ID, id), new BlockItem(block, new Item.Settings()));
     }
 
     public static void init() {
@@ -120,13 +129,18 @@ public class BlocksNStuffsBlocks {
 //        WHITE_TERRACOTTA_SLAB = register("white_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
 //        YELLOW_TERRACOTTA_SLAB = register("yellow_terracotta_slab", new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(1.25F, 4.2F)));
 
-        ANT = register("ant", new AntBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WET_GRASS).strength(-1.0F, 3600000.0F).dropsNothing()));
         INFO_UPDATE = register("info_update", new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.GRAVEL).requiresTool()));
         STONECUTTER = register("stonecutter", new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).requiresTool().strength(3.5F, 3.5F)));
+
+        ANT = register("ant", new AntBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WET_GRASS).strength(-1.0F, 3600000.0F).dropsNothing()));
         ZONE = register("zone", new ZoneBlock(AbstractBlock.Settings.create().strength(-1.0F, 3600000.8F).dropsNothing().nonOpaque().allowsSpawning(Blocks::never).blockVision(Blocks::always)));
+//        BOOK_BOX = register("book_box", new BookBoxBlock(AbstractBlock.Settings.create().strength(1.5F).sounds(BlockSoundGroup.WOOD)));
+
         CHEESE = register("cheese", new CheeseBlock(AbstractBlock.Settings.create().strength(0.1F).sounds(BlockSoundGroup.FUNGUS)));
         PICKAXE_BLOCK = register("pickaxe_block", new PickaxeBlock(AbstractBlock.Settings.create().strength(3.0F).requiresTool().solidBlock(Blocks::always)));
         PLACE_BLOCK = register("place_block", new PlaceBlock(AbstractBlock.Settings.create().strength(3.0F).requiresTool().solidBlock(Blocks::always)));
+//        COPPER_SINK = register("copper_sink", new CopperSinkBlock(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.COPPER).requiresTool().strength(2.0F).nonOpaque()));
+//        FILLED_COPPER_SINK = register("filled_copper_sink", new FilledCopperSinkBlock(AbstractBlock.Settings.copy(COPPER_SINK)));
+        COPPER_SPLEAVES = register("copper_spleaves", new CopperSpleavesBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_AQUA).strength(0.1F, 0.3F).sounds(BlockSoundGroup.COPPER).nonOpaque().allowsSpawning(Blocks::never).suffocates(Blocks::never).solidBlock(Blocks::never).blockVision(Blocks::never)));
     }
-
 }
