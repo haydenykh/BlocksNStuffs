@@ -4,6 +4,7 @@ import haydenykh.bns.common.block.BlocksNStuffsBlocks;
 import haydenykh.bns.common.tag.BlocksNStuffsBannerPatternTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BannerPattern;
+import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.*;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.registry.Registries;
@@ -17,17 +18,43 @@ import static haydenykh.bns.BlocksNStuffs.ID;
 import static haydenykh.bns.BlocksNStuffs.LOGGER;
 
 public class BlocksNStuffsItems {
-    public static final Item FOOTPRINT; // Java Edition Snapshot 20w14∞ (20w14infinite)
-    public static final Item FINE_ITEM; // Java Edition Snapshot 20w14∞ (20w14infinite)
+    public static final Item BLACK_TERRACOTTA_SLAB;
+    public static final Item BLUE_TERRACOTTA_SLAB;
+    public static final Item BROWN_TERRACOTTA_SLAB;
+    public static final Item CYAN_TERRACOTTA_SLAB;
+    public static final Item GRAY_TERRACOTTA_SLAB;
+    public static final Item GREEN_TERRACOTTA_SLAB;
+    public static final Item LIGHT_BLUE_TERRACOTTA_SLAB;
+    public static final Item LIGHT_GRAY_TERRACOTTA_SLAB;
+    public static final Item LIME_TERRACOTTA_SLAB;
+    public static final Item MAGENTA_TERRACOTTA_SLAB;
+    public static final Item ORANGE_TERRACOTTA_SLAB;
+    public static final Item PINK_TERRACOTTA_SLAB;
+    public static final Item PURPLE_TERRACOTTA_SLAB;
+    public static final Item RED_TERRACOTTA_SLAB;
+    public static final Item TERRACOTTA_SLAB;
+    public static final Item WHITE_TERRACOTTA_SLAB;
+    public static final Item YELLOW_TERRACOTTA_SLAB;
 
-    public static final Item CHEESE; // Java Edition Snapshot 23w13a_or_b
-    //    public static final Item BIT; // Java Edition Snapshot 23w13a_or_b
-    public static final Item LA_BAGUETTE; // Java Edition Snapshot 23w13a_or_b
-    public static final Item LE_TRICOLORE; // Java Edition Snapshot 23w13a_or_b
-    public static final Item LONGER_STRING; // Java Edition Snapshot 23w13a_or_b
-    public static final Item M_BANNER_PATTERN; // Java Edition Snapshot 23w13a_or_b
+    public static final Item BLACK_TERRACOTTA_STAIRS;
+    public static final Item BLUE_TERRACOTTA_STAIRS;
+    public static final Item BROWN_TERRACOTTA_STAIRS;
+    public static final Item CYAN_TERRACOTTA_STAIRS;
+    public static final Item GRAY_TERRACOTTA_STAIRS;
+    public static final Item GREEN_TERRACOTTA_STAIRS;
+    public static final Item LIGHT_BLUE_TERRACOTTA_STAIRS;
+    public static final Item LIGHT_GRAY_TERRACOTTA_STAIRS;
+    public static final Item LIME_TERRACOTTA_STAIRS;
+    public static final Item MAGENTA_TERRACOTTA_STAIRS;
+    public static final Item ORANGE_TERRACOTTA_STAIRS;
+    public static final Item PINK_TERRACOTTA_STAIRS;
+    public static final Item PURPLE_TERRACOTTA_STAIRS;
+    public static final Item RED_TERRACOTTA_STAIRS;
+    public static final Item TERRACOTTA_STAIRS;
+    public static final Item WHITE_TERRACOTTA_STAIRS;
+    public static final Item YELLOW_TERRACOTTA_STAIRS;
 
-//    public static final Item POISONOUS_POTATO_PLANT; // Java Edition Snapshot 24w14potato
+    public static final Item PLACEHOLDER;
 
     private static Item register(Block block) {
         return register(new BlockItem(block, new Settings()));
@@ -56,22 +83,43 @@ public class BlocksNStuffsItems {
         LOGGER.info("Initializing items for " + ID);
     }
 
-    private static TagKey<BannerPattern> of(String id) {
-        return TagKey.of(RegistryKeys.BANNER_PATTERN, Identifier.ofVanilla(id));
-    }
-
     static {
+        BLACK_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.BLACK_TERRACOTTA_SLAB);
+        BLUE_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.BLUE_TERRACOTTA_SLAB);
+        BROWN_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.BROWN_TERRACOTTA_SLAB);
+        CYAN_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.CYAN_TERRACOTTA_SLAB);
+        GRAY_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.GRAY_TERRACOTTA_SLAB);
+        GREEN_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.GREEN_TERRACOTTA_SLAB);
+        LIGHT_BLUE_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+        LIGHT_GRAY_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+        LIME_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.LIME_TERRACOTTA_SLAB);
+        MAGENTA_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.MAGENTA_TERRACOTTA_SLAB);
+        ORANGE_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.ORANGE_TERRACOTTA_SLAB);
+        PINK_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.PINK_TERRACOTTA_SLAB);
+        PURPLE_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.PURPLE_TERRACOTTA_SLAB);
+        RED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.RED_TERRACOTTA_SLAB);
+        TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.TERRACOTTA_SLAB);
+        WHITE_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.WHITE_TERRACOTTA_SLAB);
+        YELLOW_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.YELLOW_TERRACOTTA_SLAB);
 
-        FOOTPRINT = register("footprint", new Item(new Settings()));
-        FINE_ITEM = register("fine_item", new Item(new Settings()));
+        BLACK_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.BLACK_TERRACOTTA_STAIRS);
+        BLUE_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.BLUE_TERRACOTTA_STAIRS);
+        BROWN_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.BROWN_TERRACOTTA_STAIRS);
+        CYAN_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.CYAN_TERRACOTTA_STAIRS);
+        GRAY_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.GRAY_TERRACOTTA_STAIRS);
+        GREEN_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.GREEN_TERRACOTTA_STAIRS);
+        LIGHT_BLUE_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+        LIGHT_GRAY_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+        LIME_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.LIME_TERRACOTTA_STAIRS);
+        MAGENTA_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.MAGENTA_TERRACOTTA_STAIRS);
+        ORANGE_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.ORANGE_TERRACOTTA_STAIRS);
+        PINK_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.PINK_TERRACOTTA_STAIRS);
+        PURPLE_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.PURPLE_TERRACOTTA_STAIRS);
+        RED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.RED_TERRACOTTA_STAIRS);
+        TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.TERRACOTTA_STAIRS);
+        WHITE_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.WHITE_TERRACOTTA_STAIRS);
+        YELLOW_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.YELLOW_TERRACOTTA_STAIRS);
 
-        CHEESE = register(BlocksNStuffsBlocks.CHEESE);
-//        BIT = register("bit", new Item(new Settings()));
-        LA_BAGUETTE = register("la_baguette", new SwordItem(ToolMaterials.WOOD, new Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4F))));
-        LE_TRICOLORE = register("le_tricolore", new Item(new Settings()));
-        LONGER_STRING = register("string2", new Item(new Settings()));
-        M_BANNER_PATTERN = register("m_banner_pattern", new BannerPatternItem(BlocksNStuffsBannerPatternTags.M_PATTERN_ITEM, new Settings().maxCount(1).rarity(Rarity.EPIC)));
-
-//        POISONOUS_POTATO_PLANT = register("poisonous_potato_plant", new PoisonousPotatoPlantItem(ExtendedArmorMaterials.POTATO, ArmorItem.Type.HELMET, new Item.Settings().food(FoodComponents.POISONOUS_POTATO).maxCount(1).rarity(Rarity.EPIC).component(ExtendedDataComponentTypes.VIEWS, 0).component(ExtendedDataComponentTypes.UNDERCOVER_ID, 0).component(ExtendedDataComponentTypes.HOVERED, false).component(ExtendedDataComponentTypes.CLICKS, 0)));
+        PLACEHOLDER = register("placeholder", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC)));
     }
 }

@@ -1,6 +1,0 @@
-{
-    "parent": "bns:item/poisonous_potato_plant",
-    "textures": {
-        "layer1": "bns:item/imposter"
-    }
-}

@@ -1,2 +1,4 @@
-package haydenykh.bns.common.entity.client;public class BlocksNStuffsModelLayers {
+package haydenykh.bns.common.entity.client;
+
+public class BlocksNStuffsModelLayers {
 }

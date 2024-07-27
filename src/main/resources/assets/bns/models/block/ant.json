@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/template_command_block",
-    "textures": {
-        "front": "bns:block/ant_front",
-        "back": "bns:block/ant_back",
-        "side": "bns:block/ant_side"
-    }
-}

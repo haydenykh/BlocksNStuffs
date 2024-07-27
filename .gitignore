@@ -31,6 +31,8 @@ bin/
 # fabric
 
 run/
+src/main/generated/.cache
+test
 
 # java
 
@@ -38,3 +40,10 @@ hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
+
+# javascript
+node_modules
+
+# vitepress
+docs/.vitepress/dist
+docs/.vitepress/cache

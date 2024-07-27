@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:chain_command_block"
+    },
+    "C": {
+      "item": "minecraft:command_block"
+    },
+    "D": {
+      "item": "minecraft:dirt"
+    },
+    "E": {
+      "item": "minecraft:bedrock"
+    },
+    "J": {
+      "item": "minecraft:jigsaw"
+    },
+    "M": {
+      "item": "minecraft:command_block_minecart"
+    },
+    "R": {
+      "item": "minecraft:repeating_command_block"
+    },
+    "S": {
+      "item": "minecraft:structure_block"
+    },
+    "W": {
+      "item": "minecraft:waxed_weathered_cut_copper_stairs"
+    }
+  },
+  "pattern": [
+    "CBR",
+    "JSE",
+    "MWD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bns:placeholder"
+  }
+}

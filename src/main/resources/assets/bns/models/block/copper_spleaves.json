@@ -1,6 +1,0 @@
-{
-    "parent": "bns:block/spleaves",
-    "textures": {
-        "all": "bns:block/copper_spleaves"
-    }
-}

@@ -1,0 +1,5 @@
+# Credits {#credits}
+
+| User                                                               | Social Media Links                                                                                                                                                        | Mod                                                                 | Feature Used |
+|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------------|
+| [8s<sup>2</sup>](https://github.com/8s2) (a.k.a. EightSidedSquare) | <ul><li>[Youtube](https://www.youtube.com/@EightSidedSquare)</li><li>[Twitter](https://twitter.com/SidedSquare)</li><li>[Website](https://eightsidedsquare.com)</li></ul> | [Illegal Building Techniques](https://github.com/8s2/IllegalBlocks) | *            |

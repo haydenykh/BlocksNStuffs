@@ -12,10 +12,7 @@ import net.minecraft.world.gen.feature.FeatureConfig;
 import static haydenykh.bns.BlocksNStuffs.ID;
 
 public class BlocksNStuffsConfiguredFeatures {
-    public static final RegistryKey<ConfiguredFeature<?, ?>> LUNAR_BASE = registerKey("lunar_base");
-
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
-        register(context, LUNAR_BASE, null, new DefaultFeatureConfig());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String id) {

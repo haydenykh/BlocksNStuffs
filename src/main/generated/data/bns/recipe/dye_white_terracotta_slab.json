@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "terracotta_slab",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    [
+      {
+        "item": "bns:black_terracotta_slab"
+      },
+      {
+        "item": "bns:blue_terracotta_slab"
+      },
+      {
+        "item": "bns:brown_terracotta_slab"
+      },
+      {
+        "item": "bns:cyan_terracotta_slab"
+      },
+      {
+        "item": "bns:gray_terracotta_slab"
+      },
+      {
+        "item": "bns:green_terracotta_slab"
+      },
+      {
+        "item": "bns:light_blue_terracotta_slab"
+      },
+      {
+        "item": "bns:light_gray_terracotta_slab"
+      },
+      {
+        "item": "bns:lime_terracotta_slab"
+      },
+      {
+        "item": "bns:magenta_terracotta_slab"
+      },
+      {
+        "item": "bns:orange_terracotta_slab"
+      },
+      {
+        "item": "bns:pink_terracotta_slab"
+      },
+      {
+        "item": "bns:purple_terracotta_slab"
+      },
+      {
+        "item": "bns:red_terracotta_slab"
+      },
+      {
+        "item": "bns:yellow_terracotta_slab"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "bns:white_terracotta_slab"
+  }
+}

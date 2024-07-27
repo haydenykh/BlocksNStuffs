@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "terracotta_stairs",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    [
+      {
+        "item": "bns:black_terracotta_stairs"
+      },
+      {
+        "item": "bns:blue_terracotta_stairs"
+      },
+      {
+        "item": "bns:brown_terracotta_stairs"
+      },
+      {
+        "item": "bns:cyan_terracotta_stairs"
+      },
+      {
+        "item": "bns:gray_terracotta_stairs"
+      },
+      {
+        "item": "bns:green_terracotta_stairs"
+      },
+      {
+        "item": "bns:light_blue_terracotta_stairs"
+      },
+      {
+        "item": "bns:light_gray_terracotta_stairs"
+      },
+      {
+        "item": "bns:lime_terracotta_stairs"
+      },
+      {
+        "item": "bns:magenta_terracotta_stairs"
+      },
+      {
+        "item": "bns:orange_terracotta_stairs"
+      },
+      {
+        "item": "bns:pink_terracotta_stairs"
+      },
+      {
+        "item": "bns:purple_terracotta_stairs"
+      },
+      {
+        "item": "bns:red_terracotta_stairs"
+      },
+      {
+        "item": "bns:white_terracotta_stairs"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "bns:yellow_terracotta_stairs"
+  }
+}

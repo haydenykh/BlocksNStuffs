@@ -16,12 +16,8 @@ import java.util.List;
 import static haydenykh.bns.BlocksNStuffs.ID;
 
 public class BlocksNStuffsPlacedFeatures {
-    public static final RegistryKey<PlacedFeature> LUNAR_BASE = registerKey("lunar_base");
-
     public static void boostrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
-
-        register(context, LUNAR_BASE, configuredFeatureRegistryEntryLookup.getOrThrow(BlocksNStuffsConfiguredFeatures.LUNAR_BASE), RarityFilterPlacementModifier.of(1024), SquarePlacementModifier.of(), PlacedFeatures.BOTTOM_TO_120_RANGE, BiomePlacementModifier.of());
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String id) {
