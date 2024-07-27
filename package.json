@@ -1,6 +1,6 @@
 {
   "name": "blocks-n-stuffs",
-  "version": "0.1.0-1.21-alpha",
+  "version": "0.1.2-1.21-alpha",
   "description": "A mod featuring blocks and other stuffs.",
   "keywords": [
     "minecraft",
@@ -24,6 +24,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "update:ver": "npm i --package-lock-only",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
