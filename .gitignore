@@ -45,5 +45,5 @@ replay_*.log
 node_modules
 
 # vitepress
-docs/.vitepress/dist
-docs/.vitepress/cache
+docs/.vitepress/dist/
+docs/.vitepress/cache/
