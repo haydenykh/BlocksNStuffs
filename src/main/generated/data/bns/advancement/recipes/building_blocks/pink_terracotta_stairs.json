@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bns:pink_terracotta_stairs": {
+    "has_pink_terracotta": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bns:pink_terracotta_stairs"
+      "has_pink_terracotta"
     ]
   ],
   "rewards": {

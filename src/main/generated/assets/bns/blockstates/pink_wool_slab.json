@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bns:block/pink_wool_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/pink_wool"
+    },
+    "type=top": {
+      "model": "bns:block/pink_wool_slab_top"
+    }
+  }
+}

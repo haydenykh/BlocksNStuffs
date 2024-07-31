@@ -18,5 +18,13 @@ public class BlocksNStuffsLootTableProvider extends FabricBlockLootTableProvider
         for (Block block : BlocksNStuffsBlocks.TERRACOTTA_BLOCKS_ARRAY.keySet()) {
             addDrop(block);
         }
+
+//        for (Block block : BlocksNStuffsBlocks.GLAZED_TERRACOTTA_BLOCKS_ARRAY.keySet()) {
+//            addDrop(block);
+//        }
+
+        for (Block block : BlocksNStuffsBlocks.WOOL_BLOCKS_ARRAY.keySet()) {
+            addDrop(block);
+        }
     }
 }

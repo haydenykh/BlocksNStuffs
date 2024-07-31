@@ -54,6 +54,74 @@ public class BlocksNStuffsItems {
     public static final Item WHITE_TERRACOTTA_STAIRS;
     public static final Item YELLOW_TERRACOTTA_STAIRS;
 
+//    public static final Item BLACK_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item BLUE_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item BROWN_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item CYAN_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item GRAY_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item GREEN_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item LIME_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item MAGENTA_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item ORANGE_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item PINK_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item PURPLE_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item RED_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item WHITE_GLAZED_TERRACOTTA_SLAB;
+//    public static final Item YELLOW_GLAZED_TERRACOTTA_SLAB;
+
+//    public static final Item BLACK_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item BLUE_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item BROWN_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item CYAN_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item GRAY_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item GREEN_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item LIME_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item MAGENTA_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item ORANGE_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item PINK_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item PURPLE_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item RED_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item WHITE_GLAZED_TERRACOTTA_STAIRS;
+//    public static final Item YELLOW_GLAZED_TERRACOTTA_STAIRS;
+
+    public static final Item BLACK_WOOL_SLAB;
+    public static final Item BLUE_WOOL_SLAB;
+    public static final Item BROWN_WOOL_SLAB;
+    public static final Item CYAN_WOOL_SLAB;
+    public static final Item GRAY_WOOL_SLAB;
+    public static final Item GREEN_WOOL_SLAB;
+    public static final Item LIGHT_BLUE_WOOL_SLAB;
+    public static final Item LIGHT_GRAY_WOOL_SLAB;
+    public static final Item LIME_WOOL_SLAB;
+    public static final Item MAGENTA_WOOL_SLAB;
+    public static final Item ORANGE_WOOL_SLAB;
+    public static final Item PINK_WOOL_SLAB;
+    public static final Item PURPLE_WOOL_SLAB;
+    public static final Item RED_WOOL_SLAB;
+    public static final Item WHITE_WOOL_SLAB;
+    public static final Item YELLOW_WOOL_SLAB;
+
+    public static final Item BLACK_WOOL_STAIRS;
+    public static final Item BLUE_WOOL_STAIRS;
+    public static final Item BROWN_WOOL_STAIRS;
+    public static final Item CYAN_WOOL_STAIRS;
+    public static final Item GRAY_WOOL_STAIRS;
+    public static final Item GREEN_WOOL_STAIRS;
+    public static final Item LIGHT_BLUE_WOOL_STAIRS;
+    public static final Item LIGHT_GRAY_WOOL_STAIRS;
+    public static final Item LIME_WOOL_STAIRS;
+    public static final Item MAGENTA_WOOL_STAIRS;
+    public static final Item ORANGE_WOOL_STAIRS;
+    public static final Item PINK_WOOL_STAIRS;
+    public static final Item PURPLE_WOOL_STAIRS;
+    public static final Item RED_WOOL_STAIRS;
+    public static final Item WHITE_WOOL_STAIRS;
+    public static final Item YELLOW_WOOL_STAIRS;
+
     public static final Item PLACEHOLDER;
 
     private static Item register(Block block) {
@@ -120,6 +188,74 @@ public class BlocksNStuffsItems {
         WHITE_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.WHITE_TERRACOTTA_STAIRS);
         YELLOW_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.YELLOW_TERRACOTTA_STAIRS);
 
-        PLACEHOLDER = register("placeholder", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC)));
+//        BLACK_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.BLACK_GLAZED_TERRACOTTA_SLAB);
+//        BLUE_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.BLUE_GLAZED_TERRACOTTA_SLAB);
+//        BROWN_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.BROWN_GLAZED_TERRACOTTA_SLAB);
+//        CYAN_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.CYAN_GLAZED_TERRACOTTA_SLAB);
+//        GRAY_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.GRAY_GLAZED_TERRACOTTA_SLAB);
+//        GREEN_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.GREEN_GLAZED_TERRACOTTA_SLAB);
+//        LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB);
+//        LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB);
+//        LIME_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.LIME_GLAZED_TERRACOTTA_SLAB);
+//        MAGENTA_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB);
+//        ORANGE_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB);
+//        PINK_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.PINK_GLAZED_TERRACOTTA_SLAB);
+//        PURPLE_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB);
+//        RED_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.RED_GLAZED_TERRACOTTA_SLAB);
+//        WHITE_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.WHITE_GLAZED_TERRACOTTA_SLAB);
+//        YELLOW_GLAZED_TERRACOTTA_SLAB = register(BlocksNStuffsBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB);
+//
+//        BLACK_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.BLACK_GLAZED_TERRACOTTA_STAIRS);
+//        BLUE_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.BLUE_GLAZED_TERRACOTTA_STAIRS);
+//        BROWN_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS);
+//        CYAN_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.CYAN_GLAZED_TERRACOTTA_STAIRS);
+//        GRAY_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
+//        GREEN_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.GREEN_GLAZED_TERRACOTTA_STAIRS);
+//        LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS);
+//        LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS);
+//        LIME_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.LIME_GLAZED_TERRACOTTA_STAIRS);
+//        MAGENTA_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.MAGENTA_GLAZED_TERRACOTTA_STAIRS);
+//        ORANGE_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS);
+//        PINK_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.PINK_GLAZED_TERRACOTTA_STAIRS);
+//        PURPLE_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.PURPLE_GLAZED_TERRACOTTA_STAIRS);
+//        RED_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.RED_GLAZED_TERRACOTTA_STAIRS);
+//        WHITE_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
+//        YELLOW_GLAZED_TERRACOTTA_STAIRS = register(BlocksNStuffsBlocks.YELLOW_GLAZED_TERRACOTTA_STAIRS);
+
+        BLACK_WOOL_SLAB = register(BlocksNStuffsBlocks.BLACK_WOOL_SLAB);
+        BLUE_WOOL_SLAB = register(BlocksNStuffsBlocks.BLUE_WOOL_SLAB);
+        BROWN_WOOL_SLAB = register(BlocksNStuffsBlocks.BROWN_WOOL_SLAB);
+        CYAN_WOOL_SLAB = register(BlocksNStuffsBlocks.CYAN_WOOL_SLAB);
+        GRAY_WOOL_SLAB = register(BlocksNStuffsBlocks.GRAY_WOOL_SLAB);
+        GREEN_WOOL_SLAB = register(BlocksNStuffsBlocks.GREEN_WOOL_SLAB);
+        LIGHT_BLUE_WOOL_SLAB = register(BlocksNStuffsBlocks.LIGHT_BLUE_WOOL_SLAB);
+        LIGHT_GRAY_WOOL_SLAB = register(BlocksNStuffsBlocks.LIGHT_GRAY_WOOL_SLAB);
+        LIME_WOOL_SLAB = register(BlocksNStuffsBlocks.LIME_WOOL_SLAB);
+        MAGENTA_WOOL_SLAB = register(BlocksNStuffsBlocks.MAGENTA_WOOL_SLAB);
+        ORANGE_WOOL_SLAB = register(BlocksNStuffsBlocks.ORANGE_WOOL_SLAB);
+        PINK_WOOL_SLAB = register(BlocksNStuffsBlocks.PINK_WOOL_SLAB);
+        PURPLE_WOOL_SLAB = register(BlocksNStuffsBlocks.PURPLE_WOOL_SLAB);
+        RED_WOOL_SLAB = register(BlocksNStuffsBlocks.RED_WOOL_SLAB);
+        WHITE_WOOL_SLAB = register(BlocksNStuffsBlocks.WHITE_WOOL_SLAB);
+        YELLOW_WOOL_SLAB = register(BlocksNStuffsBlocks.YELLOW_WOOL_SLAB);
+
+        BLACK_WOOL_STAIRS = register(BlocksNStuffsBlocks.BLACK_WOOL_STAIRS);
+        BLUE_WOOL_STAIRS = register(BlocksNStuffsBlocks.BLUE_WOOL_STAIRS);
+        BROWN_WOOL_STAIRS = register(BlocksNStuffsBlocks.BROWN_WOOL_STAIRS);
+        CYAN_WOOL_STAIRS = register(BlocksNStuffsBlocks.CYAN_WOOL_STAIRS);
+        GRAY_WOOL_STAIRS = register(BlocksNStuffsBlocks.GRAY_WOOL_STAIRS);
+        GREEN_WOOL_STAIRS = register(BlocksNStuffsBlocks.GREEN_WOOL_STAIRS);
+        LIGHT_BLUE_WOOL_STAIRS = register(BlocksNStuffsBlocks.LIGHT_BLUE_WOOL_STAIRS);
+        LIGHT_GRAY_WOOL_STAIRS = register(BlocksNStuffsBlocks.LIGHT_GRAY_WOOL_STAIRS);
+        LIME_WOOL_STAIRS = register(BlocksNStuffsBlocks.LIME_WOOL_STAIRS);
+        MAGENTA_WOOL_STAIRS = register(BlocksNStuffsBlocks.MAGENTA_WOOL_STAIRS);
+        ORANGE_WOOL_STAIRS = register(BlocksNStuffsBlocks.ORANGE_WOOL_STAIRS);
+        PINK_WOOL_STAIRS = register(BlocksNStuffsBlocks.PINK_WOOL_STAIRS);
+        PURPLE_WOOL_STAIRS = register(BlocksNStuffsBlocks.PURPLE_WOOL_STAIRS);
+        RED_WOOL_STAIRS = register(BlocksNStuffsBlocks.RED_WOOL_STAIRS);
+        WHITE_WOOL_STAIRS = register(BlocksNStuffsBlocks.WHITE_WOOL_STAIRS);
+        YELLOW_WOOL_STAIRS = register(BlocksNStuffsBlocks.YELLOW_WOOL_STAIRS);
+
+        PLACEHOLDER = register("placeholder", new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).fireproof()));
     }
 }

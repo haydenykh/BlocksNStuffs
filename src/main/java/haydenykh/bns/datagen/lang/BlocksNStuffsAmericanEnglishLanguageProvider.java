@@ -26,7 +26,38 @@ public class BlocksNStuffsAmericanEnglishLanguageProvider extends FabricLanguage
 
         translationBuilder.add(BlocksNStuffsItems.PLACEHOLDER, "Placeholder");
 
+        // Terracotta Blocks
         for (Map.Entry<Block, Block> entry : BlocksNStuffsBlocks.TERRACOTTA_BLOCKS_ARRAY.entrySet()) {
+            Block block = entry.getKey();
+            Block parentBlock = entry.getValue();
+
+            String blockId = Registries.BLOCK.getId(block).toString();
+
+            if (blockId.endsWith("slab")) {
+                translationBuilder.add(block, parentBlock.getName().getString() + " Slab");
+            }
+
+            if (blockId.endsWith("stairs")) {
+                translationBuilder.add(block, parentBlock.getName().getString() + " Stairs");
+            }
+        }
+        // Glazed Terracotta Blocks
+        for (Map.Entry<Block, Block> entry : BlocksNStuffsBlocks.GLAZED_TERRACOTTA_BLOCKS_ARRAY.entrySet()) {
+            Block block = entry.getKey();
+            Block parentBlock = entry.getValue();
+
+            String blockId = Registries.BLOCK.getId(block).toString();
+
+            if (blockId.endsWith("slab")) {
+                translationBuilder.add(block, parentBlock.getName().getString() + " Slab");
+            }
+
+            if (blockId.endsWith("stairs")) {
+                translationBuilder.add(block, parentBlock.getName().getString() + " Stairs");
+            }
+        }
+        // Wool Blocks
+        for (Map.Entry<Block, Block> entry : BlocksNStuffsBlocks.WOOL_BLOCKS_ARRAY.entrySet()) {
             Block block = entry.getKey();
             Block parentBlock = entry.getValue();
 

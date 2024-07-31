@@ -57,6 +57,74 @@ public class BlocksNStuffsItemGroups {
                         entries.add(BlocksNStuffsBlocks.PURPLE_TERRACOTTA_STAIRS);
                         entries.add(BlocksNStuffsBlocks.MAGENTA_TERRACOTTA_STAIRS);
                         entries.add(BlocksNStuffsBlocks.PINK_TERRACOTTA_STAIRS);
+
+//                        entries.add(BlocksNStuffsBlocks.WHITE_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.GRAY_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.BLACK_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.BROWN_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.RED_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.LIME_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.GREEN_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.CYAN_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.BLUE_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB);
+//                        entries.add(BlocksNStuffsBlocks.PINK_GLAZED_TERRACOTTA_SLAB);
+//
+//                        entries.add(BlocksNStuffsBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.BLACK_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.RED_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.YELLOW_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.LIME_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.GREEN_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.CYAN_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.BLUE_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.PURPLE_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.MAGENTA_GLAZED_TERRACOTTA_STAIRS);
+//                        entries.add(BlocksNStuffsBlocks.PINK_GLAZED_TERRACOTTA_STAIRS);
+
+                        entries.add(BlocksNStuffsBlocks.WHITE_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.LIGHT_GRAY_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.GRAY_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.BLACK_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.BROWN_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.RED_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.ORANGE_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.YELLOW_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.LIME_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.GREEN_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.CYAN_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.LIGHT_BLUE_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.BLUE_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.PURPLE_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.MAGENTA_WOOL_SLAB);
+                        entries.add(BlocksNStuffsBlocks.PINK_WOOL_SLAB);
+
+                        entries.add(BlocksNStuffsBlocks.WHITE_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.LIGHT_GRAY_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.GRAY_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.BLACK_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.BROWN_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.RED_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.ORANGE_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.YELLOW_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.LIME_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.GREEN_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.CYAN_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.LIGHT_BLUE_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.BLUE_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.PURPLE_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.MAGENTA_WOOL_STAIRS);
+                        entries.add(BlocksNStuffsBlocks.PINK_WOOL_STAIRS);
                     })
                     .build());
 

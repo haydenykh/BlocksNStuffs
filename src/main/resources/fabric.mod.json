@@ -3,7 +3,7 @@
 	"id": "bns",
 	"version": "${version}",
 	"name": "Blocks N Stuffs",
-	"description": "Ever want to add other variants of blocks? Well, this is a mod that does that! Credits to EightSidedSquare's IllegalBuildingTechniques mod (https://github.com/8s2/IllegalBlocks).",
+	"description": "Ever want to add other variants of blocks? Well, this is a mod that does that!",
 	"authors": [
 		"HaydenYKH"
 	],
@@ -28,7 +28,7 @@
 		"bns.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
+		"fabricloader": ">=0.16.0",
 		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*"

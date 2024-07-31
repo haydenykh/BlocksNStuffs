@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bns:red_terracotta_stairs": {
+    "has_red_terracotta": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bns:red_terracotta_stairs"
+      "has_red_terracotta"
     ]
   ],
   "rewards": {

@@ -1,6 +1,6 @@
 # Terracotta Blocks {#terracotta-blocks}
 
-Terracotta blocks can be made by smelting a clay block and has multiple usage. It can use to duplicate certain smithing templates and dyed.
+Terracotta blocks can be made by smelting a clay block and has multiple usage.
 
 In this mod, many variants were added such as the slab and stairs.
 
@@ -71,7 +71,7 @@ In this mod, many variants were added such as the slab and stairs.
 ## Blocks
 <img src="../../assets/images/terracotta_blocks.png" alt="Terracotta Blocks" style="width:100%; height:120px; object-fit:cover; object-position: 0% 46.25%;">
 
-### Terracotta Slab {#blocks.terracotta_slab}
+### Terracotta Slab {#blocks.terracotta-slab}
 <br/>
 <details style="background-color:#19191d; box-shadow:5px 5px 5px #141416; border-radius:6px; padding:2px 15px;">
 <summary style="text-decoration:underline; margin:10px 5px; cursor:pointer; border-radius:8px;"><b>Click to expand</b></summary>
@@ -96,7 +96,7 @@ In this mod, many variants were added such as the slab and stairs.
 </ul>
 </details>
 
-### Terracotta Stairs {#blocks.terracotta_stairs}
+### Terracotta Stairs {#blocks.terracotta-stairs}
 <br/>
 <details style="background-color:#19191d; box-shadow:5px 5px 5px #141416; border-radius:6px; padding:2px 15px;">
 <summary style="text-decoration:underline; margin:10px 5px; cursor:pointer; border-radius:8px;"><b>Click to expand</b></summary>
@@ -123,8 +123,9 @@ In this mod, many variants were added such as the slab and stairs.
 
 ## Recipe
 They can also be dyed with a Terracotta Slab/Stairs and a Dye just like how you would dye Blue Bed with Magenta Dye that makes Magenta Bed.
-### Terracotta Slab {#recipe.terracotta_slab}
+
+### Terracotta Slab {#recipe.terracotta-slab}
 ![Terracotta Slab Recipe](../../assets/images/terracotta_slab_recipe.png)
 
-### Terracotta Stairs {#recipe.terracotta_stairs}
+### Terracotta Stairs {#recipe.terracotta-stairs}
 ![Terracotta Stairs Recipe](../../assets/images/terracotta_stairs_recipe.png)

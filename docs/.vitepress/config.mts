@@ -46,7 +46,7 @@ export default defineConfig({
         ],
 
         editLink: {
-            pattern: "https://github.com/haydenykh/BlocksNStuffs/docs/:path",
+            pattern: "https://github.com/haydenykh/BlocksNStuffs/tree/master/docs/:path",
             text: "Edit this page on GitHub",
         },
     },
@@ -107,6 +107,14 @@ function sidebar() {
                         {
                             text: "Terracotta Blocks",
                             link: "terracotta-blocks",
+                        },
+                        {
+                            text: "Glazed Terracotta Blocks",
+                            link: "glazed-terracotta-blocks",
+                        },
+                        {
+                            text: "Wool Blocks",
+                            link: "wool-blocks",
                         },
                     ],
                 },

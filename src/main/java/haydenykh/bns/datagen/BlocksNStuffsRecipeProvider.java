@@ -6,20 +6,16 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
 import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Map;
@@ -42,14 +38,46 @@ public class BlocksNStuffsRecipeProvider extends FabricRecipeProvider {
             Block block = entry.getKey();
             Block parentBlock = entry.getValue();
 
-            Identifier blockId = Registries.BLOCK.getId(block);
+            String blockId = Registries.BLOCK.getId(block).toString().substring(4);
+            String parentBlockId = Registries.BLOCK.getId(parentBlock).toString().substring(10);
 
             if (blockId.toString().endsWith("slab")) {
                 RecipeProvider.offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, block, parentBlock);
                 RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, block, parentBlock, 2);
+//                offerReversibleSlabCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, block, RecipeCategory.BUILDING_BLOCKS, parentBlock, blockId + "_to_" + parentBlockId, "terracotta");
             } else if (blockId.toString().endsWith("stairs")) {
-                RecipeProvider.createStairsRecipe(block, Ingredient.ofItems(parentBlock)).criterion("has_" + blockId, conditionsFromItem(parentBlock)).offerTo(exporter);
+                RecipeProvider.createStairsRecipe(block, Ingredient.ofItems(parentBlock)).criterion("has_" + parentBlockId, conditionsFromItem(parentBlock)).offerTo(exporter);
                 RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, block, parentBlock);
+            }
+        }
+//        // Glazed Terracotta Blocks
+//        for (Map.Entry<Block, Block> entry : BlocksNStuffsBlocks.GLAZED_TERRACOTTA_BLOCKS_ARRAY.entrySet()) {
+//            Block block = entry.getKey();
+//            Block parentBlock = entry.getValue();
+//
+//            Identifier blockId = Registries.BLOCK.getId(block);
+//
+//            if (blockId.toString().endsWith("slab")) {
+//                RecipeProvider.offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, block, parentBlock);
+//                RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, block, parentBlock, 2);
+//            } else if (blockId.toString().endsWith("stairs")) {
+//                RecipeProvider.createStairsRecipe(block, Ingredient.ofItems(parentBlock)).criterion("has_" + blockId, conditionsFromItem(parentBlock)).offerTo(exporter);
+//                RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, block, parentBlock);
+//            }
+//        }
+        // Wool Blocks
+        for (Map.Entry<Block, Block> entry : BlocksNStuffsBlocks.WOOL_BLOCKS_ARRAY.entrySet()) {
+            Block block = entry.getKey();
+            Block parentBlock = entry.getValue();
+
+            String blockId = Registries.BLOCK.getId(block).toString().substring(4);
+            String parentBlockId = Registries.BLOCK.getId(parentBlock).toString().substring(10);
+
+            if (blockId.toString().endsWith("slab")) {
+                RecipeProvider.offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, block, parentBlock);
+//                offerReversibleSlabCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, block, RecipeCategory.BUILDING_BLOCKS, parentBlock, blockId + "_to_" + parentBlockId, "terracotta");
+            } else if (blockId.toString().endsWith("stairs")) {
+                RecipeProvider.createStairsRecipe(block, Ingredient.ofItems(parentBlock)).criterion("has_" + parentBlockId, conditionsFromItem(parentBlock)).offerTo(exporter);
             }
         }
 
@@ -67,11 +95,19 @@ public class BlocksNStuffsRecipeProvider extends FabricRecipeProvider {
                 .input('M', Items.COMMAND_BLOCK_MINECART)
                 .input('W', Blocks.WAXED_WEATHERED_CUT_COPPER_STAIRS)
                 .input('D', Blocks.DIRT)
-                .criterion("has_dirt", conditionsFromItem(Blocks.DIRT))
+                .criterion("has_waxed_weathered_cut_copper_stairs", conditionsFromItem(Blocks.WAXED_WEATHERED_CUT_COPPER_STAIRS))
                 .offerTo(exporter);
 
         offerDyeableRecipes(exporter, dyeList, terracottaList, "terracotta");
         offerDyeableRecipes(exporter, dyeList, terracottaSlabList, "terracotta_slab");
         offerDyeableRecipes(exporter, dyeList, terracottaStairsList, "terracotta_stairs");
+    }
+
+    public static void offerReversibleSlabCompactingRecipes(RecipeExporter exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem, String compactingId, @Nullable String compactingGroup) {
+        ShapedRecipeJsonBuilder.create(compactingCategory, compactItem).input('#', baseItem).pattern("#").pattern("#").group(compactingGroup).criterion(hasItem(baseItem), conditionsFromItem(baseItem)).offerTo(exporter, Identifier.of(compactingId));
+    }
+
+    public static void offerReversibleSlabCompactingRecipes(RecipeExporter exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem) {
+        offerReversibleSlabCompactingRecipes(exporter, reverseCategory, baseItem, compactingCategory, compactItem, getRecipeName(compactItem), (String) null);
     }
 }

@@ -24,11 +24,21 @@ public class BlocksNStuffsModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
         // Texture Pools
-        Map<Block, BlockStateModelGenerator.BlockTexturePool> terracottaTexturePools = new HashMap<>();
+        Map<Block, BlockStateModelGenerator.BlockTexturePool> terracottaTexturePools = new HashMap();
+        Map<Block, BlockStateModelGenerator.BlockTexturePool> glazedTerracottaTexturePools = new HashMap();
+        Map<Block, BlockStateModelGenerator.BlockTexturePool> woolTexturePools = new HashMap();
 
         // Terracotta Block Texture Pool
         for (Block block : BlocksNStuffsBlocks.DEFAULT_TERRACOTTA_BLOCKS_ARRAY) {
             terracottaTexturePools.put(block, generator.registerCubeAllModelTexturePool(block));
+        }
+//        // Glazed Terracotta Block Texture Pool
+//        for (Block block : BlocksNStuffsBlocks.DEFAULT_GLAZED_TERRACOTTA_BLOCKS_ARRAY) {
+//            glazedTerracottaTexturePools.put(block, generator.registerCubeAllModelTexturePool(block));
+//        }
+        // Wool Block Texture Pool
+        for (Block block : BlocksNStuffsBlocks.DEFAULT_WOOL_BLOCKS_ARRAY) {
+            woolTexturePools.put(block, generator.registerCubeAllModelTexturePool(block));
         }
 
         // Terracotta Blocks
@@ -37,6 +47,40 @@ public class BlocksNStuffsModelProvider extends FabricModelProvider {
             Block parentBlock = entry.getValue();
 
             BlockStateModelGenerator.BlockTexturePool texturePool = terracottaTexturePools.get(parentBlock);
+
+            if (texturePool != null) {
+                String blockId = Registries.BLOCK.getId(block).toString();
+
+                if (blockId.endsWith("slab")) {
+                    texturePool.slab(block);
+                } else if (blockId.endsWith("stairs")) {
+                    texturePool.stairs(block);
+                }
+            }
+        }
+//        // Glazed Terracotta Blocks
+//        for (Map.Entry<Block, Block> entry : BlocksNStuffsBlocks.GLAZED_TERRACOTTA_BLOCKS_ARRAY.entrySet()) {
+//            Block block = entry.getKey();
+//            Block parentBlock = entry.getValue();
+//
+//            BlockStateModelGenerator.BlockTexturePool texturePool = glazedTerracottaTexturePools.get(parentBlock);
+//
+//            if (texturePool != null) {
+//                String blockId = Registries.BLOCK.getId(block).toString();
+//
+//                if (blockId.endsWith("slab")) {
+//                    texturePool.slab(block);
+//                } else if (blockId.endsWith("stairs")) {
+//                    texturePool.stairs(block);
+//                }
+//            }
+//        }
+        // Wool Blocks
+        for (Map.Entry<Block, Block> entry : BlocksNStuffsBlocks.WOOL_BLOCKS_ARRAY.entrySet()) {
+            Block block = entry.getKey();
+            Block parentBlock = entry.getValue();
+
+            BlockStateModelGenerator.BlockTexturePool texturePool = woolTexturePools.get(parentBlock);
 
             if (texturePool != null) {
                 String blockId = Registries.BLOCK.getId(block).toString();

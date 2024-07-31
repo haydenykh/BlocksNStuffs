@@ -3,6 +3,7 @@
 It's just a placeholder item.
 
 It also has an invisible texture, so don't throw it on the ground.
+In case you did, turn on hitboxes (`F3 + B`) or look for its shadow (if you really want to do that).
 
 [Back to Item List ↩️](./)
 
@@ -41,12 +42,12 @@ It also has an invisible texture, so don't throw it on the ground.
 </details>
 
 ## Recipe
-It uses a lot of weird items.
+It uses a lot of weird items, 'cause why not. And must be exactly placed like this in the crafting grid.
 
-- Dirt
-- Bedrock
-- Command Blocks, Minecart
-- Jigsaw, Structure Block
-- Waxed Weathered Cut Copper Stairs
+- Bedrock `an unbreakable block`
+- Dirt `one of the most common blocks`
+- Jigsaw, Structure Block `unobtainable blocks`
+- Command Blocks, Minecart `unobtainable blocks & entity`
+- Waxed Weathered Cut Copper Stairs `block with the longest name (subject to change)`
 
 ![Placeholder Recipe](../../assets/images/placeholder_recipe.png)
